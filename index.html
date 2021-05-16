@@ -19,30 +19,42 @@
             <h2>Signup for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your newsbox</p>
         </main>
-        <form action="#">
+        <form class="master_form" action="index.html" method="post">
             <div class="border">
-            <fieldset class="contact_info">
-              <legend>Contact Info</legend>
-                <label for="name" class="contact">Full Name</label>
-                <input type="text" id="name"  name="name" class="contact"  placeholder="Required" required>
-                <label for="email" class="contact">Email Address</label>
-                <input type="email" id="email" name="email" class="contact" placeholder="Required" required>
-                <label for="phone" class="contact">Phone Number</label>
-                <input type="tel" id="phone" name="phone" class="contact" placeholder="123-45-678">
-                <label for="city" class="contact">City</label>
-                <input type="text" id="city" name="city" class="contact" placeholder="*Recommended">
-                <label for="state" class="contact">State</label>
-                <select id="state" name="state" required>
-                    <option>New York</option>
-                    <option>California</option>
-                    <option>Washington</option>
-                    <option>Texas</option>
-                    <option>Florida</option>
-                    <option>Massachusets</option>
-                </select>
-                <label for="zip" class="contact">Zip</label>
-                <input type="text" id="zip"  name="zip" class="contact" placeholder="0000">
-            </fieldset>
+                <fieldset class="contact_info">
+                    <legend>Contact Info</legend>
+                    <div class="flex-pair">
+                        <label for="name" >Full Name</label>
+                        <input type="text" id="name"  name="name" placeholder="Required" required>
+                    </div>
+                    <div class="flex-pair">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Required" required>
+                    </div>
+                    <div class="flex-pair">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678">
+                    </div>
+                    <div class="flex-pair">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="*Recommended">
+                    </div>
+                    <div class="flex-pair">
+                        <label for="state">State</label>
+                        <select id="state" name="state" required>
+                            <option>New York</option>
+                            <option>California</option>
+                            <option>Washington</option>
+                            <option>Texas</option>
+                            <option>Florida</option>
+                            <option>Massachusets</option>
+                        </select>
+                    </div>
+                    <div class="flex-pair">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip"  name="zip" placeholder="0000">
+                    </div>
+                </fieldset>
             </div>
             <div class="border">   
                 <fieldset>
@@ -61,6 +73,8 @@
                     <input type="checkbox" id="java" name="news_sel">
                     <label for="java">JavaSpript News</label>
                 </div>
+                
+                <br>
 
                 <p>Newsletter Format:</p>
                 <div>
@@ -70,11 +84,11 @@
                   <input type="radio" id="plain_news" name="news" value="plain">
                   <label for="plain_news">Plain</label>
                 </div>
-
-                <label for="other">Other topics you'd like to hear about</label>
-                <textarea id="other" name="story" rows="5" cols="33">        
-                </textarea>
-                
+                <div class="other">
+                    <label for="other">Other topics you'd like to hear about</label>
+                    <textarea id="other" name="story" rows="5" cols="33">        
+                    </textarea>
+                </div>
                 <div>
                   <button type="submit">Submit</button>
                 </div>
